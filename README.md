@@ -1,4 +1,4 @@
-# mStable Apps
+# Merlin Apps
 
 Web frontends for interacting with the Merlin contracts.
 

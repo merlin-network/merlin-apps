@@ -228,13 +228,13 @@ export const Meta8Logic: FC<{ isBooted: boolean }> = ({ isBooted }) => {
             ))
           )
         ) : (
-          <Typist cursor={{ show: true, blink: true }} avgTypingDelay={20}>
-            <p>Meta-8 (c) 1991 mStable Entertainment Australia</p>
+          <Typist cursor={{ show: true, blink: true }} avgTypingDelay={40}>
+            <p>Merlin's Magic (c) 1991</p>
             <br />
-            <p>Reticulating splines...</p>
-            <p>Aping into MTA...</p>
-            <p>Following @metaboi_...</p>
-            <p>System startup complete.</p>
+            <p>Palming crystal ball...</p>
+            <p>Aping into MERLIN...</p>
+            <p>Enabling astral projection...</p>
+            <p>Warping into realm.</p>
           </Typist>
         )}
       </Content>

@@ -38,7 +38,7 @@ const Inner = styled.div`
 export const Dials: FC = () => (
   <DialsContext>
     <div>
-      <GovernancePageHeader title="Dials" subtitle="Vote on future MTA emissions" />
+      <GovernancePageHeader title="Dials" subtitle="Vote on future MERLIN emissions" />
       <Inner>
         <EpochDetails />
         <DialAndSidebar>

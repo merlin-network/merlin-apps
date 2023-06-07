@@ -147,7 +147,7 @@ export const PoolDetailCard: FC<Props> = ({ poolAddress, className }) => {
         {!!feederPool?.vault && (
           <RewardsAPY>
             <p>
-              <Tooltip tip="33% of earned MTA rewards are claimable immediately. The remaining rewards are streamed linearly after 26 weeks">
+              <Tooltip tip="33% of earned MERLIN rewards are claimable immediately. The remaining rewards are streamed linearly after 26 weeks">
                 Rewards APY
               </Tooltip>
             </p>
@@ -160,7 +160,7 @@ export const PoolDetailCard: FC<Props> = ({ poolAddress, className }) => {
                   {feederPoolApy.value?.rewards.maxBoost ? (
                     <div>
                       &nbsp;→&nbsp;
-                      <UnderlinedTip tip="Max boost can be achieved by staking MTA" hideIcon>
+                      <UnderlinedTip tip="Max boost can be achieved by staking MERLIN" hideIcon>
                         {feederPoolApy.value && <CountUp end={feederPoolApy.value.rewards.maxBoost} suffix="%" />}
                       </UnderlinedTip>
                     </div>

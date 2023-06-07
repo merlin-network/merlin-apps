@@ -3,19 +3,19 @@ import { StreamType } from '../../context/RewardStreamsProvider'
 // Need to replace symbol mapping, probably ...
 export const assetColorMapping: Record<string, string> = {
   'mBTC/fAST': '#eb6ba9',
-  'mUSD/GUSD': '#1ecdea',
-  'mUSD/BUSD': '#F0B90B',
-  'mUSD/alUSD': '#e7bd9d',
-  'mUSD/RAI': '#198a8b',
-  'mUSD/FEI': '#22996E',
-  'mUSD/FRAX': '#aaaaaa',
+  'mUSX/GUSD': '#1ecdea',
+  'mUSX/BUSD': '#F0B90B',
+  'mUSX/alUSD': '#e7bd9d',
+  'mUSX/RAI': '#198a8b',
+  'mUSX/FEI': '#22996E',
+  'mUSX/FRAX': '#aaaaaa',
   'mBTC/HBTC': '#0B197D',
   'mBTC/TBTC': '#DCD1AB',
   'mBTC/TBTCv2': '#6EBC77',
   fAST: '#eb6ba9',
   GUSD: '#17d4f2',
   mBTC: '#000',
-  mUSD: '#000',
+  mUSX: '#000',
 }
 
 const greenRewards = {

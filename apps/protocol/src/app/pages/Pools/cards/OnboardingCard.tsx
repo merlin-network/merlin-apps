@@ -20,7 +20,7 @@ const Title: Record<OnboardingType, string> = {
 
 const Content: Record<OnboardingType, string> = {
   user: 'Liquidity providers earn fees on trades proportional to their share of the pool’s liquidity.',
-  active: 'By providing liquidity and staking your LP token, you will earn MTA rewards in addition to trade fees.',
+  active: 'By providing liquidity and staking your LP token, you will earn MERLIN rewards in addition to trade fees.',
 }
 
 const Container = styled(Card)`

@@ -140,8 +140,8 @@ export const SaveStake: FC = () => {
     if (!contract || !amountToStake?.exact) return
     propose<Interfaces.StakingRewardsWithPlatformToken, 'stake(uint256)'>(
       new TransactionManifest(contract, 'stake(uint256)', [amountToStake.exact], {
-        present: `Staking ${amountToStake?.simple.toFixed(0)} imUSD`,
-        past: 'Staked imUSD',
+        present: `Staking ${amountToStake?.simple.toFixed(0)} imUSX`,
+        past: 'Staked imUSX',
       }),
     )
   }
@@ -150,8 +150,8 @@ export const SaveStake: FC = () => {
     if (!contract || !amountToWithdraw?.exact) return
     propose<Interfaces.StakingRewardsWithPlatformToken, 'withdraw'>(
       new TransactionManifest(contract, 'withdraw', [amountToWithdraw.exact], {
-        present: `Withdrawing ${amountToWithdraw?.simple.toFixed(0)} imUSD`,
-        past: 'Withdrew imUSD',
+        present: `Withdrawing ${amountToWithdraw?.simple.toFixed(0)} imUSX`,
+        past: 'Withdrew imUSX',
       }),
     )
   }

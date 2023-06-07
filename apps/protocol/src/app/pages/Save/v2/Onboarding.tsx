@@ -160,7 +160,7 @@ export const OnboardingCard: FC = () => {
             <TokenContainer>
               <StyledTokenIcon symbol={`v-${saveTokenSymbol}`} />
               <div>{saveTokenSymbol} Vault</div>
-              <p>Earns interest and MTA rewards</p>
+              <p>Earns interest and MERLIN rewards</p>
               {massetName === 'mbtc' && (
                 <p>
                   <span>Recommended for BTC</span>

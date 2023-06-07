@@ -164,7 +164,7 @@ export const StakeForm: FC<Props> = ({ className, isMigrating = false }) => {
       {!!balanceV2?.simple && <TimeMultiplierImpact isStaking stakeDelta={amount?.exact} />}
       <Warnings>
         {stakedInOtherToken && (
-          <Warning highlight>It is generally not advisable to stake in both MTA and BPT because of increased gas costs.</Warning>
+          <Warning highlight>It is generally not advisable to stake in both MERLIN and BPT because of increased gas costs.</Warning>
         )}
         <Warning>
           Unstaking is subject to a cooldown period of {cooldown} days, followed by a {unstakeWindow} day withdrawable period.

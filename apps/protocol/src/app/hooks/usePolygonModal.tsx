@@ -140,13 +140,13 @@ export const usePolygonModal = (): (() => void) => {
           <Arrow />
           <MassetContainer>
             <h4>
-              Receive <b>mUSD</b> and use across Polygon
+              Receive <b>mUSX</b> and use across Polygon
             </h4>
-            <p>mUSD is redeemable for USDC, DAI or USDT at any time</p>
+            <p>mUSX is redeemable for USDC, DAI or USDT at any time</p>
             &nbsp;
             <div>
-              <Tooltip tip="mUSD" hideIcon>
-                <LargeTokenIcon symbol="mUSD" />
+              <Tooltip tip="mUSX" hideIcon>
+                <LargeTokenIcon symbol="mUSX" />
               </Tooltip>
             </div>
           </MassetContainer>

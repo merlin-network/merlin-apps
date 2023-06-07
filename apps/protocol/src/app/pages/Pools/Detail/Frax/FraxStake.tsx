@@ -224,7 +224,7 @@ export const FraxStake: FC = () => {
           priority: true,
         },
         {
-          id: 'MTA',
+          id: 'MERLIN',
           name: 'FRAX',
           apy: 0,
           apyTip: 'This APY is derived from currently available staking rewards, and is not reflective of future rates.',
@@ -236,7 +236,7 @@ export const FraxStake: FC = () => {
           name: 'FRAX',
           apy: 0,
           apyTip: 'This APY is derived from currently available staking rewards, and is not reflective of future rates.',
-          tokens: ['MTA'],
+          tokens: ['MERLIN'],
           priority: false,
         },
       ].map(v => ({ ...v, stakeLabel: undefined, balance: undefined, amounts: undefined })),
@@ -281,7 +281,7 @@ export const FraxStake: FC = () => {
               <TableCell>
                 <div>
                   <h4>Amount:</h4>
-                  <span>{inputFormValue} mUSD/FRAX</span>
+                  <span>{inputFormValue} mUSX/FRAX</span>
                 </div>
                 <div>
                   <h4>Lock time: </h4>
@@ -309,7 +309,7 @@ export const FraxStake: FC = () => {
                   <TableCell width={TABLE_CELL_WIDTHS[0]}>
                     <h3>
                       <CountUp end={liquidity?.simple} decimals={2} />
-                      {` mUSD/FRAX`}
+                      {` mUSX/FRAX`}
                     </h3>
                   </TableCell>
                   <MultiplierCell width={TABLE_CELL_WIDTHS[1]}>

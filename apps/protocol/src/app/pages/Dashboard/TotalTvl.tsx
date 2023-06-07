@@ -75,7 +75,7 @@ export const TotalTvl: FC = () => {
       {tvl ? (
         <>
           <h3>{formatter.format(tvl)}</h3>
-          <p>Total value deposited in mStable</p>
+          <p>Total value deposited in Merlin</p>
         </>
       ) : (
         <StyledSkeleton />

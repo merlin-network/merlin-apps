@@ -92,7 +92,7 @@ export const PoolRow: FC<{ feederPool: FeederPoolState; showBalance: boolean }> 
             <CountUp end={baseApy || 0} suffix="%" prefix="+" />
             <RewardsApy active>
               {!!userBoostApy && <CountUp end={userBoostApy} suffix="%" prefix="+" />}
-              <TokenIcon symbol="MTA" />
+              <TokenIcon symbol="MERLIN" />
             </RewardsApy>
             {!!feederPoolApy?.value?.platformRewards && (
               <RewardsApy>
@@ -112,7 +112,7 @@ export const PoolRow: FC<{ feederPool: FeederPoolState; showBalance: boolean }> 
                 </>
               ) : null}
               <CountUp end={rewardsMaxApy} suffix="%" />
-              <TokenIcon symbol="MTA" />
+              <TokenIcon symbol="MERLIN" />
             </RewardsApy>
             {!!feederPoolApy?.value?.platformRewards && (
               <RewardsApy>

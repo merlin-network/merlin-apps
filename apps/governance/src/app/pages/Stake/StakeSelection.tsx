@@ -193,7 +193,7 @@ export const StakeSelection: FC = () => {
           <div>
             <h2>Stake MTA</h2>
             <h4>
-              In return for participating in governance, you will receive MTA rewards.{' '}
+              In return for participating in governance, you will receive MERLIN rewards.{' '}
               <a href="https://docs.mstable.org/using-mstable/mta-staking/staking-v2" target="_blank" rel="noopener noreferrer">
                 Learn about the risks
               </a>
@@ -207,7 +207,7 @@ export const StakeSelection: FC = () => {
           <div>
             <CheckmarkIcon />
           </div>
-          MTA Rewards
+          MERLIN Rewards
         </Checklist>
         <Button highlighted scale={1.125} onClick={() => handleSelection(Selection.MTA)}>
           Stake MTA
@@ -232,7 +232,7 @@ export const StakeSelection: FC = () => {
           <div>
             <CheckmarkIcon />
           </div>
-          MTA Rewards, BAL Rewards, Trading Fees
+          MERLIN Rewards, BAL Rewards, Trading Fees
         </Checklist>
         <Button highlighted scale={1.125} onClick={() => handleSelection(Selection.BPT)}>
           Stake BPT

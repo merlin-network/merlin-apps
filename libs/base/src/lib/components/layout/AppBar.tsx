@@ -4,7 +4,7 @@ import { useMemo } from 'react'
 import { TokenIcon } from '@apps/base/components/core'
 import { useShowSubgraphStatus } from '@apps/browser-settings'
 import { ActivitySpinner, UnstyledButton } from '@apps/dumb-components'
-import { ReactComponent as LogoSvg } from '@apps/icons/mstable-small.svg'
+import { ReactComponent as LogoSvg } from '@apps/icons/merlin-logo-black.svg'
 import { TransactionStatus } from '@apps/transaction-manifest'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
@@ -20,8 +20,8 @@ import { WalletButton } from './WalletButton'
 import type { FC } from 'react'
 
 const Logo = styled(LogoSvg)`
-  width: 1.75rem;
-  height: 1.75rem;
+  width: 3.5rem;
+  height: 3.5rem;
   padding-top: 2px;
 `
 

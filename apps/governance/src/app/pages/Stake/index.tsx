@@ -21,7 +21,7 @@ export const Stake: FC = () => {
   return (
     <RewardsEarnedProvider>
       <Container>
-        <GovernancePageHeader title="Stake" stakedTokenSwitcher subtitle="Participate in governance and earn MTA rewards" />
+        <GovernancePageHeader title="Stake" stakedTokenSwitcher subtitle="Participate in governance and earn MERLIN rewards" />
         <StakingStatusProvider>
           <div>
             <StakeBalances />

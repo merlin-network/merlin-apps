@@ -155,7 +155,7 @@ export const SaveMigrationProvider: FC = ({ children }) => {
         complete: !!(v1.savingsBalance.balance?.exact.eq(0) && v2.savingsBalance.balance?.exact.gt(0)),
         options: [
           {
-            title: 'Deposit to Save V2 (imUSD)',
+            title: 'Deposit to Save V2 (imUSX)',
             buttonTitle: 'Deposit',
             key: 'deposit',
             onClick: () => setSelectedSaveVersion(2),

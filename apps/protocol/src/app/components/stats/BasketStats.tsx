@@ -22,12 +22,12 @@ import type { FC, ReactComponentElement } from 'react'
 type TooltipProps = any
 // type TooltipProps = DefaultTooltipContentProps<any, any>;
 
-type TokenSymbol = 'mUSD' | 'sUSD' | 'SUSD' | 'DAI' | 'USDT' | 'TUSD' | 'USDC' | 'BUSD'
+type TokenSymbol = 'mUSX' | 'sUSD' | 'SUSD' | 'DAI' | 'USDT' | 'TUSD' | 'USDC' | 'BUSD'
 
 type TokenColours = Record<TokenSymbol, string>
 
 const TOKEN_COLOURS: TokenColours = {
-  mUSD: '#000',
+  mUSX: '#000',
   sUSD: '#1e1a31',
   SUSD: '#1e1a31',
   BUSD: '#ebb532',
@@ -38,7 +38,7 @@ const TOKEN_COLOURS: TokenColours = {
 }
 
 const OVERWEIGHT_TOKEN_COLOURS: TokenColours = {
-  mUSD: '#000',
+  mUSX: '#000',
   sUSD: '#0d0b15',
   SUSD: '#0d0b15',
   BUSD: '#634f14',
@@ -49,7 +49,7 @@ const OVERWEIGHT_TOKEN_COLOURS: TokenColours = {
 }
 
 const TOKEN_HATCH_COLOURS: TokenColours = {
-  mUSD: '#000',
+  mUSX: '#000',
   sUSD: '#9489bf',
   SUSD: '#9489bf',
   BUSD: '#ffd375',

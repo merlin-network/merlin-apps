@@ -94,7 +94,7 @@ export const MessageHandler: Props = {
     status: 'none',
     content: (
       <Container>
-        <Modal>
+        {/* <Modal>
           <WarningIcon />
           <p>mStable has been aquired by dHedge. Following the outlined aquisition update, certain mStable products will be sunset.</p>
           <p>
@@ -112,7 +112,7 @@ export const MessageHandler: Props = {
           >
             Read the Announcement
           </a>
-        </Modal>
+        </Modal> */}
       </Container>
     ),
   },

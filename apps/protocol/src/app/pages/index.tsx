@@ -8,7 +8,7 @@ import { useHistory } from 'react-router-dom'
 import styled from 'styled-components'
 import { useAccount, useConnect } from 'wagmi'
 
-import { ReactComponent as LogoImage } from '../icons/mstable.svg'
+import { ReactComponent as LogoImage } from '../icons/merlin-type-black.svg'
 
 import type { MassetName } from '@apps/types'
 import type { FC } from 'react'

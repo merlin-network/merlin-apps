@@ -87,7 +87,7 @@ export const FraxStakingProvider: FC = ({ children }) => {
         res
           .json()
           .then((json: { identifier: string; pairLink: string; apy?: string; apy_max?: string }[]) => {
-            const poolData = json.find(p => p.identifier === 'mStable FRAX/mUSD')
+            const poolData = json.find(p => p.identifier === 'mStable FRAX/mUSX')
             if (poolData) {
               setRewards.value({
                 base: parseFloat(poolData.apy ?? '0'),
@@ -182,7 +182,7 @@ export const FraxStakingProvider: FC = ({ children }) => {
             const address = index === 0 ? fraxAddresses.rewardsTokens[0] : fraxAddresses.rewardsTokens[1]
             return {
               address,
-              symbol: address === fraxAddresses.rewardsTokens[0] ? 'FXS' : 'MTA',
+              symbol: address === fraxAddresses.rewardsTokens[0] ? 'FXS' : 'MERLIN',
               amount: new BigDecimal(amount), // Assumed 18 decimals (so far, we know it will be)
             }
           }),

@@ -99,18 +99,18 @@ export const EthereumSave: FC = () => {
                   </ButtonPanel>
                 )}
                 <InfoButton
-                  title="Stake MTA"
-                  content="Stake MTA to participate in Governance and boost your rewards on Vault deposits."
+                  title="Stake MERLIN"
+                  content="Stake MERLIN to participate in Governance and boost your rewards on Vault deposits."
                   onClick={handleGovernanceClick}
                 />
-                <InfoBox highlight subtitle="Using mStable Save">
+                <InfoBox highlight subtitle="Using Merlin Save">
                   <p>
                     By depositing to {`i${massetConfig.formattedName}`} you will begin earning interest on your underlying{' '}
-                    {massetConfig.formattedName}. {vault ? 'Deposits to the Vault earn interest in addition to MTA rewards.' : ''}
+                    {massetConfig.formattedName}. {vault ? 'Deposits to the Vault earn interest in addition to MERLIN rewards.' : ''}
                   </p>
                   <p>
                     Deposits from assets other than {massetConfig.formattedName} will first mint {massetConfig.formattedName} before being
-                    deposited. There are risks in using mUSD and Save. Please read{' '}
+                    deposited. There are risks in using mUSX and Save. Please read{' '}
                     <a href="https://docs.mstable.org/advanced/app-usage-terms-and-conditions">this page</a> to understand these risks more.
                   </p>
                 </InfoBox>

@@ -301,7 +301,7 @@ export const UserRewards: FC = () => {
                       <span>&nbsp;{format(fromUnixTime(stream.finish), 'HH:mm')}</span>
                     </TableCell>
                     <TableCell>
-                      <p>{(stream.amount?.[2] ?? stream.amount?.[3])?.toFixed(2)} MTA</p>
+                      <p>{(stream.amount?.[2] ?? stream.amount?.[3])?.toFixed(2)} MERLIN</p>
                     </TableCell>
                   </TableRow>
                 ))}
@@ -333,9 +333,9 @@ export const UserRewards: FC = () => {
           <EmptyState>
             <h3>No rewards to claim</h3>
             {selectedSaveVersion === 1 ? (
-              <p>Migrate your balance and deposit to the Vault to earn MTA rewards.</p>
+              <p>Migrate your balance and deposit to the Vault to earn MERLIN rewards.</p>
             ) : (
-              <p>Deposit to the Vault to earn MTA rewards.</p>
+              <p>Deposit to the Vault to earn MERLIN rewards.</p>
             )}
           </EmptyState>
         )}

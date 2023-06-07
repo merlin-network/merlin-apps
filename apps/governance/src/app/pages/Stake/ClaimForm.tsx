@@ -106,7 +106,7 @@ export const ClaimForm: FC = () => {
             <h3>Compound rewards?</h3>
             <ToggleInput onClick={toggleIsCompounding} checked={isCompounding} />
           </div>
-          <p>This will claim and re-stake your earned MTA in 1 transaction</p>
+          <p>This will claim and re-stake your earned MERLIN in 1 transaction</p>
         </Compound>
       ) : (
         <MerkleDropBAL />

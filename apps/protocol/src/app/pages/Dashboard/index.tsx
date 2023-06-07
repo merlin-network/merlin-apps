@@ -3,7 +3,7 @@ import { useEffect, useLayoutEffect, useState } from 'react'
 import { useAccount } from '@apps/base/context/account'
 import { useDataState } from '@apps/data-provider'
 import { InfoButton, TabsLeftAlign } from '@apps/dumb-components'
-import { ReactComponent as Logo } from '@apps/icons/mstable.svg'
+import { ReactComponent as Logo } from '@apps/icons/merlin-type-black.svg'
 import { useSelectedMasset } from '@apps/masset-provider'
 import { ViewportWidth } from '@apps/theme'
 import Skeleton from 'react-loading-skeleton'
@@ -91,10 +91,10 @@ const LogoContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 1rem 0;
+  padding: -2rem 0;
 
   svg {
-    width: 12rem;
+    width: 20rem;
     fill: ${({ theme }) => theme.color.body};
   }
 `
@@ -131,7 +131,7 @@ export const Dashboard: FC = () => {
         history.push(`${massetName}/save`)
         break
       default:
-        window.open('https://staking.mstable.app/', '_blank')
+        window.open('https://staking.incubus.network/', '_blank')
     }
   }
 
@@ -152,7 +152,7 @@ export const Dashboard: FC = () => {
           />
           <InfoButton
             title="Staking"
-            content="Stake MTA to participate in Governance and boost your rewards on Vault deposits"
+            content="Stake MERLIN to participate in Governance and boost your rewards on Vault deposits"
             onClick={() => handleButtonClick(1)}
           />
         </ActionCallouts>

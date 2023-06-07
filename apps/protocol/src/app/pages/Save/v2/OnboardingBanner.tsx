@@ -172,7 +172,7 @@ export const OnboardingBanner: FC = () => {
       <div>
         <div>
           <h2>{massetName === 'mbtc' ? 'Start earning yield on your BTC in DeFi.' : 'Start earning yield on your stablecoins.'}</h2>
-          <h3>Powered by lending markets in DeFi and the mStable AMM.</h3>
+          <h3>Powered by lending markets in DeFi and the Merlin AMM.</h3>
         </div>
         <ButtonContainer>
           {!isSaveV1 && (

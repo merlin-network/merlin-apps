@@ -1,9 +1,9 @@
 {
-  "name": "mstable-apps",
+  "name": "merlin-apps",
   "version": "0.0.0",
-  "description": "mStable Apps",
+  "description": "merlin Apps",
   "license": "LGPL-3.0-or-later",
-  "author": "Stability Labs Pty. Ltd. <hello@stabilitylabs.co>",
+  "author": "Merlin <craft1@skiff.com>",
   "homepage": "./",
   "scripts": {
     "nx": "nx",
@@ -177,12 +177,12 @@
     "web-vitals": "^2.1.0"
   },
   "browser": {
+    "crypto": false,
     "fs": false,
     "http": false,
     "https": false,
     "os": false,
-    "stream": false,
-    "crypto": false
+    "stream": false
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,mdx}": "eslint --cache --fix"

@@ -46,8 +46,8 @@ const useTokens = () => {
     const MTA =
       isMainnet &&
       ({
-        name: `Meta (mStable Governance)`,
-        symbol: `MTA`,
+        name: `Merlin Governance`,
+        symbol: `MERLIN`,
         address: networkAddresses.MTA,
         decimals: 18,
       } as SubscribedToken | undefined)

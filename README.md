@@ -1,17 +1,17 @@
 # mStable Apps
 
-Web frontends for interacting with the mStable contracts.
+Web frontends for interacting with the Merlin contracts.
 
 ---
 
 ## Apps
 
-This repository comprises multiple mStable apps, all built using common libraries and a common UI.
+This repository comprises multiple Merlin apps, all built using common libraries and a common UI.
 
 | Status | Name               | Nx project   | Port | Public hosts                                                                                                                                                                       |
 | ------ | ------------------ | ------------ | ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ✅     | mStable Protocol   | `protocol`   | 3000 | [Google Cloud](https://mstable.app)              |
-| ✅     | mStable Governance | `governance` | 3200 | [Google Cloud](https://staking.mstable.app/#/stake) |
+| ✅     | Merlin Protocol   | `protocol`   | 3000 | [Google Cloud](https://incubus.network)              |
+| ✅     | Merlin Governance | `governance` | 3200 | [Google Cloud](https://staking.incubus.network/#/stake) |
 
 
 ---

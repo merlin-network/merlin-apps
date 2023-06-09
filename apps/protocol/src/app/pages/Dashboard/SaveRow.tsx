@@ -119,7 +119,7 @@ export const SaveRow: FC<{ massetState: MassetState; showBalance: boolean }> = (
             <CountUp end={saveApy} suffix="%" />
             <RewardsApy active>
               <CountUp end={userBoostAPY} suffix="%" prefix="+" />
-              <TokenIcon symbol="MERLIN" />
+              <TokenIcon symbol="mRLN" />
             </RewardsApy>
           </Tooltip>
         ) : (
@@ -135,7 +135,7 @@ export const SaveRow: FC<{ massetState: MassetState; showBalance: boolean }> = (
                   <CountUp end={maxAPY} suffix="%" />
                 </>
               )}
-              <TokenIcon symbol="MERLIN" />
+              <TokenIcon symbol="mRLN" />
             </RewardsApy>
           </Tooltip>
         )}

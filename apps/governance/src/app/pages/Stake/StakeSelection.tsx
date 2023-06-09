@@ -1,8 +1,8 @@
 import { useNetworkAddresses } from '@apps/base/context/network'
 import { Button, Tooltip } from '@apps/dumb-components'
 import { ReactComponent as CheckmarkIcon } from '@apps/icons/checkmark.svg'
-import { ReactComponent as BPTIcon } from '@apps/icons/tokens/BPT-MTA-ETH.svg'
-import { ReactComponent as MTAIcon } from '@apps/icons/tokens/MTA.svg'
+import { ReactComponent as BPTIcon } from '@apps/icons/tokens/BPT-mRLN-ETH.svg'
+import { ReactComponent as MTAIcon } from '@apps/icons/tokens/mRLN.svg'
 import { ViewportWidth } from '@apps/theme'
 import styled, { css } from 'styled-components'
 
@@ -12,7 +12,7 @@ import { useStakingStatusDispatch } from '../../context/StakingStatus'
 import type { FC } from 'react'
 
 enum Selection {
-  MTA,
+  mRLN,
   BPT,
 }
 
@@ -175,7 +175,7 @@ export const StakeSelection: FC = () => {
     const tokens = Object.keys(options)
       .map(key => key)
       .sort(a => (a === stkMtaAddress ? -1 : 1))
-    setStakedToken(tokens[selection === Selection.MTA ? 0 : 1])
+    setStakedToken(tokens[selection === Selection.mRLN ? 0 : 1])
     setSelectedOption()
   }
 
@@ -184,16 +184,16 @@ export const StakeSelection: FC = () => {
       <MTASelectionBox>
         <RecommendedBox>
           <div>
-            <Tooltip tip="MTA is the preferred staking choice as the transaction cost is cheaper and less complex" hideIcon>
+            <Tooltip tip="mRLN is the preferred staking choice as the transaction cost is cheaper and less complex" hideIcon>
               Recommended
             </Tooltip>
           </div>
         </RecommendedBox>
         <Header>
           <div>
-            <h2>Stake MTA</h2>
+            <h2>Stake mRLN</h2>
             <h4>
-              In return for participating in governance, you will receive MERLIN rewards.{' '}
+              In return for participating in governance, you will receive mRLN rewards.{' '}
               <a href="https://docs.mstable.org/using-mstable/mta-staking/staking-v2" target="_blank" rel="noopener noreferrer">
                 Learn about the risks
               </a>
@@ -207,18 +207,18 @@ export const StakeSelection: FC = () => {
           <div>
             <CheckmarkIcon />
           </div>
-          MERLIN Rewards
+          mRLN Rewards
         </Checklist>
-        <Button highlighted scale={1.125} onClick={() => handleSelection(Selection.MTA)}>
-          Stake MTA
+        <Button highlighted scale={1.125} onClick={() => handleSelection(Selection.mRLN)}>
+          Stake mRLN
         </Button>
       </MTASelectionBox>
       <SelectionBox>
         <Header>
           <div>
-            <h2>Stake MTA/ETH BPT</h2>
+            <h2>Stake mRLN/ETH BPT</h2>
             <h4>
-              In return for participating in governance, you will receive MTA, BAL rewards and trading fees.{' '}
+              In return for participating in governance, you will receive mRLN, BAL rewards and trading fees.{' '}
               <a href="https://docs.mstable.org/using-mstable/mta-staking/staking-v2" target="_blank" rel="noopener noreferrer">
                 Learn about the risks
               </a>
@@ -232,7 +232,7 @@ export const StakeSelection: FC = () => {
           <div>
             <CheckmarkIcon />
           </div>
-          MERLIN Rewards, BAL Rewards, Trading Fees
+          mRLN Rewards, BAL Rewards, Trading Fees
         </Checklist>
         <Button highlighted scale={1.125} onClick={() => handleSelection(Selection.BPT)}>
           Stake BPT

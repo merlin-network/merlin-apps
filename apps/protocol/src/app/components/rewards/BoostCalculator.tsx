@@ -219,7 +219,7 @@ export const BoostCalculator: FC<{
   return (
     <Container
       title="Earning Power Calculator"
-      tooltip="Calculate your optimal MERLIN rewards multiplier"
+      tooltip="Calculate your optimal mRLN rewards multiplier"
       headerContent={
         noBackButton ? null : (
           <Button scale={0.7} onClick={onClick}>
@@ -229,7 +229,7 @@ export const BoostCalculator: FC<{
       }
     >
       <InfoMessage>
-        <span>Use the calculator below to find your optimal MERLIN rewards multiplier</span>
+        <span>Use the calculator below to find your optimal mRLN rewards multiplier</span>
       </InfoMessage>
       <div>
         <CalculatorInputs>

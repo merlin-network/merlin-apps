@@ -224,7 +224,7 @@ export const FraxStake: FC = () => {
           priority: true,
         },
         {
-          id: 'MERLIN',
+          id: 'mRLN',
           name: 'FRAX',
           apy: 0,
           apyTip: 'This APY is derived from currently available staking rewards, and is not reflective of future rates.',
@@ -236,7 +236,7 @@ export const FraxStake: FC = () => {
           name: 'FRAX',
           apy: 0,
           apyTip: 'This APY is derived from currently available staking rewards, and is not reflective of future rates.',
-          tokens: ['MERLIN'],
+          tokens: ['mRLN'],
           priority: false,
         },
       ].map(v => ({ ...v, stakeLabel: undefined, balance: undefined, amounts: undefined })),

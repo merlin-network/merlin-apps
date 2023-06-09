@@ -229,10 +229,10 @@ export const Meta8Logic: FC<{ isBooted: boolean }> = ({ isBooted }) => {
           )
         ) : (
           <Typist cursor={{ show: true, blink: true }} avgTypingDelay={40}>
-            <p>Merlin's Magic (c) 1991</p>
+            <p>mRLN's Magic (c) 1991</p>
             <br />
             <p>Palming crystal ball...</p>
-            <p>Aping into MERLIN...</p>
+            <p>Aping into mRLN...</p>
             <p>Enabling astral projection...</p>
             <p>Warping into realm.</p>
           </Typist>

@@ -117,7 +117,7 @@ export const Overview: FC<{ tab: DF }> = ({ tab }) => {
     const ethUnlocked = _unlocked
 
     const polygonUnlocked = (() => {
-      let unlocked = rewardsEarned?.rewards?.find(v => v?.token === 'MERLIN')?.earned?.simple
+      let unlocked = rewardsEarned?.rewards?.find(v => v?.token === 'mRLN')?.earned?.simple
       const fraxUnlocked = getFraxRewards(fraxSubscribedData?.value?.accountData)
       if (tab === DF.Pools && fraxUnlocked) {
         unlocked += fraxUnlocked
@@ -139,7 +139,7 @@ export const Overview: FC<{ tab: DF }> = ({ tab }) => {
       <Item>
         <h3>Claimable rewards</h3>
         <Tooltip hideIcon tip={`$${(unlocked * mtaPrice.value).toFixed(2)}`}>
-          <CountUp end={unlocked} suffix="MERLIN" spaced />
+          <CountUp end={unlocked} suffix="mRLN" spaced />
         </Tooltip>
       </Item>
     </Items>

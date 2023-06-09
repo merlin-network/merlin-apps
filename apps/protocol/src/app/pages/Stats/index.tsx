@@ -109,7 +109,7 @@ export const Stats: FC = () => {
 
   return (
     <div>
-      <PageHeader title="Stats" subtitle="Explore activity across Merlin" massetSwitcher />
+      <PageHeader title="Stats" subtitle="Explore activity across mRLN" massetSwitcher />
       {massetState ? <StatsContent /> : <Skeleton height={500} />}
     </div>
   )

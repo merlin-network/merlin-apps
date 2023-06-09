@@ -45,7 +45,7 @@ const stakeTabs: {
   {
     id: Tabs.Claim,
     title: 'Claim',
-    heading: 'MTA Rewards',
+    heading: 'mRLN Rewards',
     subheading: 'Your vMTA balance will increase the longer you stake',
     link: { title: 'See quests', href: '/quests' },
     Form: ClaimForm,

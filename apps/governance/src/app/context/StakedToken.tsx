@@ -50,8 +50,8 @@ export const StakedTokenProvider: FC = ({ children }) => {
             data.map(({ id: address, stakingToken: { symbol } }) => [address, { icon: { symbol }, asset: { address, symbol } }]),
           )
 
-          // Default to Staked MERLIN (not BPT)
-          return { selected: selected ?? data.find(st => st.stakingToken.symbol === 'MTA')?.id, options }
+          // Default to Staked mRLN (not BPT)
+          return { selected: selected ?? data.find(st => st.stakingToken.symbol === 'mRLN')?.id, options }
         }, [selected, stakingQuery.data]),
       },
       <ContractProvider>{children}</ContractProvider>,

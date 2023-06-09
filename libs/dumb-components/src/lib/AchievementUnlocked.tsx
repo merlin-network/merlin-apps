@@ -1,4 +1,4 @@
-import mtaImg from '@apps/icons/tokens/MTA.svg'
+import mtaImg from '@apps/icons/tokens/mRLN.svg'
 import styled, { css } from 'styled-components'
 
 import type { FC } from 'react'

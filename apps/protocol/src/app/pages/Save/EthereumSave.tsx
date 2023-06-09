@@ -99,14 +99,14 @@ export const EthereumSave: FC = () => {
                   </ButtonPanel>
                 )}
                 <InfoButton
-                  title="Stake MERLIN"
-                  content="Stake MERLIN to participate in Governance and boost your rewards on Vault deposits."
+                  title="Stake mRLN"
+                  content="Stake mRLN to participate in Governance and boost your rewards on Vault deposits."
                   onClick={handleGovernanceClick}
                 />
-                <InfoBox highlight subtitle="Using Merlin Save">
+                <InfoBox highlight subtitle="Using mRLN Save">
                   <p>
                     By depositing to {`i${massetConfig.formattedName}`} you will begin earning interest on your underlying{' '}
-                    {massetConfig.formattedName}. {vault ? 'Deposits to the Vault earn interest in addition to MERLIN rewards.' : ''}
+                    {massetConfig.formattedName}. {vault ? 'Deposits to the Vault earn interest in addition to mRLN rewards.' : ''}
                   </p>
                   <p>
                     Deposits from assets other than {massetConfig.formattedName} will first mint {massetConfig.formattedName} before being

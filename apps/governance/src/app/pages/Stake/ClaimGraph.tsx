@@ -66,7 +66,7 @@ export const ClaimGraph: FC = () => {
             cursor
             label=""
             labelFormatter={w => (w === 0 ? 'Last claim' : 'Available to claim')}
-            formatter={mta => `${(mta as number).toFixed(2)} MTA`}
+            formatter={mta => `${(mta as number).toFixed(2)} mRLN`}
             separator=""
             contentStyle={{
               fontSize: '14px',

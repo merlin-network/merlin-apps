@@ -188,19 +188,19 @@ const PoolDetailContent: FC = () => {
         <PoolOverview />
         <Exchange>
           <TabCard tabs={tabs} active={activeTab} onClick={setActiveTab} />
-          <InfoBox highlight subtitle="Using Merlin Feeder Pools">
+          <InfoBox highlight subtitle="Using mRLN Feeder Pools">
             <p>
               Feeder Pools offer a way to earn with your assets with <span>low impermanent loss risk.</span>
             </p>
             <p>
               Liquidity providers passively earn swap fees. Deposits to the Vault earn swap fees in addition to{' '}
-              {isEthereum ? `MERLIN rewards which vest over time.` : `token rewards.`}
+              {isEthereum ? `mRLN rewards which vest over time.` : `token rewards.`}
               {isEthereum && !readMore && <UnstyledButton onClick={setReadMore}>Learn more</UnstyledButton>}
             </p>
             {readMore && (
               <>
                 <p>
-                  You can <span>multiply your rewards</span> in Merlin pools by staking MERLIN.
+                  You can <span>multiply your rewards</span> in mRLN pools by staking mRLN.
                 </p>
                 <p>
                   Claiming rewards will send 33% of the unclaimed amount to you immediately, with the rest safely locked in a stream vesting

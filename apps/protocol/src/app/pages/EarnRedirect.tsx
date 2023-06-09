@@ -18,7 +18,7 @@ export const EarnRedirect: FC = () => {
   const selectedMassetName = useSelectedMassetName()
   return (
     <Container>
-      <PageHeader massetSwitcher title="Earn" subtitle="Ecosystem rewards with Merlin" />
+      <PageHeader massetSwitcher title="Earn" subtitle="Ecosystem rewards with mRLN" />
       <div>
         Visit the <ExternalLink href={`https://earn.mstable.org/#/${selectedMassetName}/earn`}>Earn App</ExternalLink> to access Earn.
       </div>

@@ -9,7 +9,7 @@ import type { StakingRewardsExtended } from '@apps/masset-hooks'
 import type { StakeData } from '../../context/FraxStakingProvider'
 
 const {
-  addresses: { WBTC, MTA },
+  addresses: { WBTC, mRLN },
 } = getNetwork(ChainIds.EthereumMainnet)
 
 export const useWBTCPrice = () => {
@@ -18,12 +18,12 @@ export const useWBTCPrice = () => {
 }
 export const useMTAPrice = () => {
   const { fetchPrice } = useFetchPriceCtx()
-  return fetchPrice(MTA)
+  return fetchPrice(mRLN)
 }
 
 export const getFraxRewards = (accountData?: StakeData) => {
   if (!accountData) return
-  return accountData?.earned?.find(v => v?.symbol === 'MTA')?.amount?.simple ?? 0
+  return accountData?.earned?.find(v => v?.symbol === 'mRLN')?.amount?.simple ?? 0
 }
 
 export const getFraxDeposited = (accountData?: StakeData) => {

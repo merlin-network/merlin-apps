@@ -136,9 +136,9 @@ const InfoContainer = styled.div`
 `
 
 const Info: FC<{ isBPT?: boolean }> = ({ isBPT = false }) => {
-  const subtitle = isBPT ? 'Provide Liquidity' : 'Purchase MTA'
-  const title = isBPT ? 'MTA/ETH BPT' : 'MTA'
-  const buttonTitle = isBPT ? 'Balancer' : 'Buy MTA'
+  const subtitle = isBPT ? 'Provide Liquidity' : 'Purchase mRLN'
+  const title = isBPT ? 'mRLN/ETH BPT' : 'mRLN'
+  const buttonTitle = isBPT ? 'Balancer' : 'Buy mRLN'
   const link = isBPT ? BALANCER_URL : MTA_URL
   return (
     <InfoContainer>
@@ -304,7 +304,7 @@ export const StakeBalances: FC = () => {
           {stakedToken?.symbol === 'stkBPT' && balAPY && (
             <Group label="BAL APY" balance={{ amount: balAPY?.value, suffix: '%' }} loading={loading} />
           )}
-          <Group label="MTA APY" balance={values.userRewardsApy ? values.userRewardsApy : values.baseRewardsApy} loading={loading} />
+          <Group label="mRLN APY" balance={values.userRewardsApy ? values.userRewardsApy : values.baseRewardsApy} loading={loading} />
         </DefaultWidget>
       ) : (
         <InfoWidget>

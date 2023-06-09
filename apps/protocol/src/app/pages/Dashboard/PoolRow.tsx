@@ -54,13 +54,13 @@ export const PoolRow: FC<{ feederPool: FeederPoolState; showBalance: boolean }> 
   const userBoostTip = `
     Pool: ${baseApy.toFixed(2)}%<br />
     Vault Rewards:<br /> 
-    ${userBoostApy ? `${userBoostApy.toFixed(2)}%` : ''} MTA
+    ${userBoostApy ? `${userBoostApy.toFixed(2)}%` : ''} mRLN
     ${(platformRewardsApy > 0 && `<br />${platformRewardsApy.toFixed(2)}% ${platformRewardsToken?.symbol}`) || ''}
   `
   const apyTip = `
     Pool: ${baseApy.toFixed(2)}%<br />
     Vault Rewards:<br /> 
-    ${rewardsBaseApy.toFixed(2)}-${rewardsMaxApy.toFixed(2)}% MTA
+    ${rewardsBaseApy.toFixed(2)}-${rewardsMaxApy.toFixed(2)}% mRLN
     ${(platformRewardsApy > 0 && `<br />${platformRewardsApy.toFixed(2)}% ${platformRewardsToken?.symbol}`) || ''}
   `
 
@@ -92,7 +92,7 @@ export const PoolRow: FC<{ feederPool: FeederPoolState; showBalance: boolean }> 
             <CountUp end={baseApy || 0} suffix="%" prefix="+" />
             <RewardsApy active>
               {!!userBoostApy && <CountUp end={userBoostApy} suffix="%" prefix="+" />}
-              <TokenIcon symbol="MERLIN" />
+              <TokenIcon symbol="mRLN" />
             </RewardsApy>
             {!!feederPoolApy?.value?.platformRewards && (
               <RewardsApy>
@@ -112,7 +112,7 @@ export const PoolRow: FC<{ feederPool: FeederPoolState; showBalance: boolean }> 
                 </>
               ) : null}
               <CountUp end={rewardsMaxApy} suffix="%" />
-              <TokenIcon symbol="MERLIN" />
+              <TokenIcon symbol="mRLN" />
             </RewardsApy>
             {!!feederPoolApy?.value?.platformRewards && (
               <RewardsApy>

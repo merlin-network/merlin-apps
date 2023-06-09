@@ -61,7 +61,7 @@ export const ActiveDial: FC = () => {
           <div className="emission">
             {activeDial && <CountUp end={activeDial.dialVotes.voteShare} decimals={0} duration={0.3} suffix="% " className="vote-share" />}
             <CountUp end={emission} decimals={0} duration={0.3} />
-            <StyledTokenIcon symbol="MTA" />
+            <StyledTokenIcon symbol="mRLN" />
           </div>
         </div>
       </Header>

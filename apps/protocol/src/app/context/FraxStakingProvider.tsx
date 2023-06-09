@@ -182,7 +182,7 @@ export const FraxStakingProvider: FC = ({ children }) => {
             const address = index === 0 ? fraxAddresses.rewardsTokens[0] : fraxAddresses.rewardsTokens[1]
             return {
               address,
-              symbol: address === fraxAddresses.rewardsTokens[0] ? 'FXS' : 'MERLIN',
+              symbol: address === fraxAddresses.rewardsTokens[0] ? 'FXS' : 'mRLN',
               amount: new BigDecimal(amount), // Assumed 18 decimals (so far, we know it will be)
             }
           }),

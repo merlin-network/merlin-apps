@@ -118,7 +118,7 @@ export const DistributionBar: FC = () => {
           </div>
           <div>
             <CountUp end={epochData?.emission} decimals={0} duration={0.3} />
-            <StyledTokenIcon symbol="MTA" />
+            <StyledTokenIcon symbol="mRLN" />
           </div>
         </Header>
         <ResponsiveContainer height={24} width="100%">
